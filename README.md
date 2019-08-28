@@ -20,4 +20,4 @@ Project is created with:
 * Font Awesome Version 5
 
 ### Sources
-Homework for Bootstrap Akademia 108.
+Homework - Bootstrap Akademia 108.
