@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    background-color: #98fb98;
+    height: 100vh;
+}
+div {
+    position: relative;
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-size: cover;
+    background-position: center top;
+}
+.picture1 {
+    background-image: url(../img/product-1.jpg);
+}
+.picture2 {
+    background-image: url(../img/product-2.jpg);
+}
+.picture3 {
+    background-image: url(../img/product-3.jpg);
+}
+.picture4 {
+    background-image: url(../img/product-4.jpg);
+}
+.mask {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+}
+.mask:hover {
+    cursor: pointer;
+    background-color: rgba(255, 111, 0, 0.5);
+}
+i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: 40px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.mask:hover i {
+    opacity: 1;
+}
+@media (max-width:767px) {
+    .container {
+        flex-flow: column nowrap;
+    }
+    div {
+        width: 300px;
+        flex-basis: 23%;
+        background-position: center center;
+    }
+}
+@media (min-width:768px) and (max-width: 991px) {
+    .container {
+        flex-flow: row wrap;
+    }
+    div {
+        flex-basis: 45%;
+        height: 250px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        flex-flow: row nowrap;
+    }
+    div {
+        flex-basis: 24%;
+        height: 400px;
+    }
+ }
